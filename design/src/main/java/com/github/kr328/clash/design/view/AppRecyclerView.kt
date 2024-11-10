@@ -11,16 +11,15 @@ class AppRecyclerView @JvmOverloads constructor(
     attributeSet: AttributeSet? = null,
     @AttrRes defStyleAttr: Int = 0
 ) : RecyclerView(context, attributeSet, defStyleAttr) {
-    
     init {
         isFocusable = false
     }
 
-    fun onDraw(c: Canvas?) {
+    override fun onDraw(c: Canvas) {
         super.onDraw(c)
     }
 
-    fun dispatchDraw(canvas: Canvas?) {
+    override fun dispatchDraw(canvas: Canvas) {
         super.dispatchDraw(canvas)
     }
 }
